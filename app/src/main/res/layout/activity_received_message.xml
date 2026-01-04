@@ -5,31 +5,34 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ReceivedMessageActivity">
 
-    <EditText
-        android:id="@+id/editTextMessage"
+    <TextView
+        android:id="@+id/textViewLabel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:inputType="textPersonName"
-        android:hint="@string/type_your_message_hint"
+        android:text="@string/your_message"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonSendMessage"
+    <TextView
+        android:id="@+id/textViewMessage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:textAllCaps="true"
-        android:text="@string/send_message"
+        android:background="@color/design_default_color_primary_variant"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextMessage" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewLabel" />
 </androidx.constraintlayout.widget.ConstraintLayout>
